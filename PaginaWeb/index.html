@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <form action="#" method="post">
+      
+        
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+    
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="numero">Número:</label><br>
+        <input type="text" id="numero" name="numero" required><br><br>
+
+        <label for="complemento">Complemento:</label><br>
+        <input type="text" id="complemento" name="complemento"><br><br>
+
+        <label for="cidade">Cidade:</label><br>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="BA">Bahia</option>
+            <option value="PE">Pernambuco</option>
+            <option value="CE">Ceará</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="XXXXX-XXX" required><br><br>
+
+        
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" id="nao_informar" name="genero" value="nao_informar">
+        <label for="nao_informar">Prefiro não informar</label><br><br>
+
+      
+        <label>Cursos de Interesse:</label><br>
+        <input type="checkbox" id="ads" name="cursos" value="ads">
+        <label for="ads">Análise e Desenvolvimento de Sistemas</label><br>
+
+        <input type="checkbox" id="jogos" name="cursos" value="jogos">
+        <label for="jogos">Jogos Digitais</label><br>
+
+        <input type="checkbox" id="gestao" name="cursos" value="gestao">
+        <label for="gestao">Gestão de TI</label><br>
+
+        <input type="checkbox" id="banco" name="cursos" value="banco">
+        <label for="banco">Banco de Dados</label><br><br>
+
+        
+        <label>Modalidade do Curso:</label><br>
+        <input type="radio" id="presencial" name="modalidade" value="presencial">
+        <label for="presencial">Presencial</label>
+
+        <input type="radio" id="ead" name="modalidade" value="ead">
+        <label for="ead">EAD</label>
+
+        <input type="radio" id="semi" name="modalidade" value="semi_presencial">
+        <label for="semi">Semi-Presencial</label><br><br>
+
+        <button type="submit">Enviar Cadastro</button>
+    </form>
+</body>
+</html>
